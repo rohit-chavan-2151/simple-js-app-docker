@@ -29,7 +29,10 @@ let mongoUrlLocal = 'mongodb://mongoadmin:rohit@localhost:27017'
 let mongoUrlDocker = 'mongodb://mongoadmin:rohit@mongodb'
 
 // pass these options to mongo client connect request to avoid DeprecationWarning for current Server Discovery and Monitoring engine
-let mongoClientOptions = { useNewUrlParser: true, useUnifiedTopology: true }
+let mongoClientOptions = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+}
 
 // "user-account" in demo with docker. "my-db" in demo with docker-compose
 let databaseName = 'user-db'
