@@ -1,11 +1,11 @@
-FROM node:14.21.2-alpine3.16
+FROM node:14-alpine
 
 ENV MONGO_DB_USERNAME=mongoadmin \
     MONGO_DB_PWD=rohit
 
-WORKDIR /app
+WORKDIR app
 
-COPY . .
+COPY . /app
 
 RUN npm install
 
